@@ -1,11 +1,18 @@
-#survey-form {
+form {
   background-color: #eee;
-  height: 96%;
-  width: 850;
-  border-style: solid double;
-  border-color: black;
-  border-radius: 5px;
+  height: 100%;
+  width: 75%;
 }
+form {
+  margin-left: 10%;
+}
+h1,#desc {
+  text-align: center;
+}
+#intro,#dropdown,#sport,#sub {
+  margin-left: 40%;
+}
+
 #id {
   -webkit-appearance: none;
   width: 100%;

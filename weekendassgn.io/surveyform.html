@@ -3,36 +3,36 @@
     <link rel="stylesheet" type="text/css" href="survey.css"/>
     <title>Survey Form</title>
   </head>
-  <h1 id="title">Sports Survey Form</h1>
-  <p id="description">This survey is aimed at finding the number of people who participate in various sports activities in the area</p>
   <form id="survey-form">
-    <div>
+    <h1 id="title">Sports Survey Form</h1>
+    <p id="desc">This survey is aimed at finding the number of people who participate in various sports activities in the area</p> <br>
+    <div id="intro">
       <label for="names">
-        <strong>Full name</strong>: <input type="text" id="names" name="Names" placeholder="Enter your correct names"/ required>
+        <strong>Full name</strong>: <input type="text" id="names" name="Names" placeholder="Enter your correct names"/>
       </label>
     </div>
-    <div><br/>
+    <div id="intro"><br/>
       <label id="email">
         <strong>Email Address</strong>: <input type="email" id="email" name="Email" placeholder="Enter your correct email address"/>
         <span class="error" aria-live="polite"></span>
       </label>
       <!--the aria-live attribute makes the custom error message present to everyone-->
     </div>
-    <div><br/>
+    <div id="intro"><br/>
       <label for="number">
         <strong>Enter a Number</strong>:<input type="number" id="number" name="Number" placeholder="Enter only one number" min="1" max="10"/>
         <span class="error" aria-live="polite"></span>
       </label>
-    </div>
-    <p>
+    </div> <br>
+    <p  id="dropdown">
       <span>Do you exercise alone:</span>
-      <select id="dropdown">
+      <select>
         <option value="Yes">Yes</option>
         <option value="No">No</option>
         <option value="Sometimes">Sometimes</option>
       </select>
     </p>
-    <fieldset>
+    <fieldset id="sex">
       <legend><strong>Sex</strong></legend>
       <div>
         <label for="male">
@@ -50,7 +50,7 @@
         </label>
       </div>
     </fieldset> <br>
-    <fieldset>
+    <fieldset id="status">
       <legend><strong>Marital Status</strong></legend>
       <div>
         <label for="married">
@@ -68,7 +68,7 @@
         </label>
       </div>
     </fieldset>
-    <p>
+    <p id="sport">
       <span><strong>Which sports activity do you perform</strong></span> <br>
       <input type="checkbox" name="sport_1" value="Jogging or running">Jogging or Running <br>
       <input type="checkbox" name="sport_2" value="aerobics or gym"> Aerobics and Gym <br>
@@ -77,13 +77,13 @@
       <input type="checkbox" name="sport_5" value="soccer"> Soccer <br>
       <input type="checkbox" name="sport_6" value="tennis"> Tennis
     </p>
-    <div>
+    <div id="bio">
       <span><strong>Any additional comments</strong></span> <br>
       <label for="text">
-        <textarea id="text" name="text_space" rows="10" cols="100"></textarea>
+        <textarea id="text" name="text_space" rows="5" cols="95"></textarea>
       </label>
     </div> <br>
-    <div>
+    <div id="sub">
       <input type="submit" value="Submit">
     </div>
   </form>
