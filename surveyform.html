@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="survey.css"/>
+    <title>Survey Form</title>
+  </head>
+  <h1 id="title">Sports Survey Form</h1>
+  <p id="description">This survey is aimed at finding the number of people who participate in various sports activities in the area</p>
+  <form id="survey-form">
+    <div>
+      <label for="names">
+        <strong>Full name</strong>: <input type="text" id="names" name="Names" placeholder="Enter your correct names"/ required>
+      </label>
+    </div>
+    <div><br/>
+      <label id="email">
+        <strong>Email Address</strong>: <input type="email" id="email" name="Email" placeholder="Enter your correct email address"/>
+        <span class="error" aria-live="polite"></span>
+      </label>
+      <!--the aria-live attribute makes the custom error message present to everyone-->
+    </div>
+    <div><br/>
+      <label for="number">
+        <strong>Enter a Number</strong>:<input type="number" id="number" name="Number" placeholder="Enter only one number" min="1" max="10"/>
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </div>
+    <p>
+      <span>Do you exercise alone:</span>
+      <select id="dropdown">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Sometimes">Sometimes</option>
+      </select>
+    </p>
+    <fieldset>
+      <legend><strong>Sex</strong></legend>
+      <div>
+        <label for="male">
+          <input type="radio" id="male" name="man"/>Male
+        </label>
+      </div>
+      <div>
+        <label for="female">
+          <input type="radio" id="female" name="woman"/> Female
+        </label>
+      </div>
+      <div>
+        <label for="other">
+          <input type="radio" id="other" name="Others"/> Others
+        </label>
+      </div>
+    </fieldset> <br>
+    <fieldset>
+      <legend><strong>Marital Status</strong></legend>
+      <div>
+        <label for="married">
+          <input type="radio" id ="married"name="Married"/>Married
+        </label>
+      </div>
+      <div>
+        <label for="single">
+          <input type="radio" id ="single" name="Single"/>Single
+        </label>
+      </div>
+      <div>
+        <label for="widow">
+          <input type="radio" id ="widow"name="Widow"/>Widowed
+        </label>
+      </div>
+    </fieldset>
+    <p>
+      <span><strong>Which sports activity do you perform</strong></span> <br>
+      <input type="checkbox" name="sport_1" value="Jogging or running">Jogging or Running <br>
+      <input type="checkbox" name="sport_2" value="aerobics or gym"> Aerobics and Gym <br>
+      <input type="checkbox" name="sport_3" value="cycling"> Cycling <br>
+      <input type="checkbox" name="sport_4" value="basketball"> Basketball <br>
+      <input type="checkbox" name="sport_5" value="soccer"> Soccer <br>
+      <input type="checkbox" name="sport_6" value="tennis"> Tennis
+    </p>
+    <div>
+      <span><strong>Any additional comments</strong></span> <br>
+      <label for="text">
+        <textarea id="text" name="text_space" rows="10" cols="100"></textarea>
+      </label>
+    </div> <br>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</html>
